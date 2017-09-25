@@ -24,6 +24,7 @@ def setUpCostMatrix():
 
 
 def numOfPaths(matrix, costMatrix): 
+	global rows, columns
 	for i in range(0, columns - 1):
 		costMatrix[rows - 1, i] = 1
 	for i in range(0, rows - 1):
